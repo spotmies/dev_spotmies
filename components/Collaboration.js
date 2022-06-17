@@ -1,0 +1,11 @@
+import React from "react";
+
+const Collaboration = () => {
+  return (
+    <div className="mx-auto justify-between flex my-[100px] w-[87%]">
+      Collaboration
+    </div>
+  );
+};
+
+export default Collaboration;
