@@ -1,4 +1,17 @@
 import React from "react";
+import Container from "./Container";
+const boxes = {
+  display: "flex",
+};
+const box1 = {
+  flexDirection: "row",
+
+  margin: "60px 60px ",
+};
+const box2 = {
+  flexDirection: "row",
+  marginRight: "-190px",
+};
 
 const Project = ({ projectRef }) => {
   return (
@@ -15,9 +28,25 @@ const Project = ({ projectRef }) => {
           odio, cum quam maxime, veniam dolor tempore ut rerum magni sint,
           incidunt alias error autem voluptatibus natus excepturi eos! Cum.
         </p>
-        <p className="my-5">Button</p>
+        <div className="mt-7">
+          <a
+            href="#"
+            className="my-5 border-blue-300 border-solid border-2 rounded-full p-2 pr-10 pl-10 text-sky-600  "
+          >
+            View All
+          </a>
+        </div>
       </div>
-      <div>Cards</div>
+      <div style={boxes}>
+        <div style={box1}>
+          <Container></Container>
+          <Container></Container>
+        </div>
+        <div style={box2}>
+          <Container></Container>
+          <Container></Container>
+        </div>
+      </div>
     </div>
   );
 };
