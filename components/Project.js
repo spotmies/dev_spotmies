@@ -4,7 +4,7 @@ const Project = ({ projectRef }) => {
   return (
     <div
       ref={projectRef}
-      className="mx-auto justify-between flex my-[100px] w-[87%]"
+      className="mx-auto justify-between flex my-[100px] w-[84%]"
     >
       <div>
         <h2 className="text-5xl font-bold mt-[120px]">
