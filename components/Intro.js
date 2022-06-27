@@ -14,7 +14,7 @@ const Intro = () => {
         <p className="w-[60%] mt-10 text-gray-500 text-lg leading-tight">
           {Constants.DESCRIPTION}
         </p>
-        <button className="mt-10 mb-5 bg-blue-400  text-white  py-[8px] px-[22px] rounded-lg">
+        <button className="mt-10 mb-8 bg-blue-400  text-white  py-[8px] px-[22px] rounded-lg">
           Send Request
         </button>
       </div>

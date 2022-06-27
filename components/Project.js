@@ -19,8 +19,10 @@ const Project = ({ projectRef }) => {
       ref={projectRef}
       className="mx-auto justify-between flex my-[100px] w-[87%]"
     >
-      <div>
-        <h2 className="text-5xl font-bold mt-[120px]">
+      <div className="ml-[40px] mt-[30px]">
+        <div className="w-[7%]  bg-gray-300 h-[7%] rounded-full ml-[-47px]"></div>
+
+        <h2 className="text-5xl font-bold mt-[-27px]  ">
           Our <span className="text-blue-400">Projects</span>
         </h2>
         <p className="w-[45%] mt-[60px] text-gray-500 text-lg">
@@ -36,6 +38,9 @@ const Project = ({ projectRef }) => {
             View All
           </a>
         </div>
+        <div className="w-[3%] mt-[-34px]  ml-[30%] bg-gray-300 h-[3%] rounded-full"></div>
+
+        <div className="w-[10%] mt-[90px]  ml-[-77px] bg-gray-300 h-[10%] rounded-full"></div>
       </div>
       <div style={boxes}>
         <div style={box1}>

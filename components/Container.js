@@ -1,17 +1,15 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 
 const Container = (props) => {
-  // const renderImg = () => props.mySrc ? <img src={images(props.mySrc)} alt={props.myAlt} title={props.myTitle} /> : null
-  //
   const mystyle = {
     width: "290px",
     margin: "12px -120% 50px",
     borderRadius: "10px",
   };
   const icons = {
-    width: "60px",
-    height: "50px",
-    padding: "10px",
+    boxShadow:
+      "rgba(216, 236, 251, 0.8) 59px 50px 120px -38px inset, rgba(216, 236, 251, 0.8) -1px 109px 30px -8px  ",
   };
   const inner_box = {
     backgroundColor: "#f2f2f2",
@@ -20,37 +18,41 @@ const Container = (props) => {
   };
   const button = {
     backgroundColor: "white",
-    color: "blue",
-    width: "90px",
-    height: "40px",
-    padding: "2px 5px 2px 5px",
-    margin: "18px 2px 15px 30%",
-    borderRadius: "4px",
-  };
-  const heading = {
-    color: "black",
-    fontWeight: "700",
-    fontSize: "25px",
-    margin: "0% 60px ",
+    // boxShadow: " 0 -3em 3em rgba(0,0,0,0.1)",
+
+    // boxShadow: "  0.3em 0.3em 1em rgba(1,1,1,0.1)",
+    color: "#0099ff",
+    // width: "120px",
+    // height: "38px",
+    padding: "4px 5px 0px 19px",
+
+    margin: "18px 2px 0px 76px",
+    borderRadius: "9px",
   };
 
   return (
     <>
       <div style={mystyle}>
-        <div style={inner_box}>
-          <div className="icon" style={icons}>
-            <img src="/spotmies_logo2.png"></img>
+        <div className=" bg-white rounded-l-3xl rounded-tr-3xl rounded-br-3xl pb-6 shadow-lg mt-[20px] ">
+          <div
+            className="icon px-10   rounded-full mr-[70px]  ml-[70px] mb-[20px] pt-[30px] pb-[04px] "
+            style={icons}
+          >
+            <img
+              className="h-[120px] w-[160px] "
+              src="/spotmies_logo2.png"
+            ></img>
           </div>
-          <div className="heading" style={heading}>
-            Spotmies
-          </div>
-          <div className="text">
+          <div className=" text-4xl font-semibold px-16 pb-7 ">Spotmies</div>
+          <div className="text px-7 text-gray-400 ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
-            rem odio, cum quam maxime, veniam dolor tempore ut rerum magni sint,
-            incidunt alias error autem voluptatibus natus excepturi eos! Cum.
+            rem odio, cum quam
           </div>
-          <div className="bg-black-600" style={button}>
-            <a href="VIEW MORE"> view more</a>
+          <div className="  w-[120px] h-[43px] shadow-xl pl-[19px] pt-2   mt-[18px] mr-[20px] ml-[76px] rounded-lg  bg-white hover:bg-blue-500 text-blue-400 hover:text-white ">
+            <a className="font-semibold  " href="VIEW MORE">
+              {" "}
+              view more
+            </a>
           </div>
         </div>
       </div>
