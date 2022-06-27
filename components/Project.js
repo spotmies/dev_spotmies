@@ -17,7 +17,7 @@ const Project = ({ projectRef }) => {
   return (
     <div
       ref={projectRef}
-      className="mx-auto justify-between flex my-[100px] w-[87%]"
+      className="mx-auto justify-between flex my-[100px] w-[84%]"
     >
       <div className="ml-[40px] mt-[30px]">
         <div className="w-[7%]  bg-gray-300 h-[7%] rounded-full ml-[-47px]"></div>
