@@ -1,5 +1,8 @@
 import React from "react";
 import Container from "./Container";
+import Container2 from "./Container2";
+import Container3 from "./Container3";
+import Container4 from "./Container4";
 const boxes = {
   display: "flex",
 };
@@ -45,11 +48,11 @@ const Project = ({ projectRef }) => {
       <div style={boxes}>
         <div style={box1}>
           <Container></Container>
-          <Container></Container>
+          <Container2></Container2>
         </div>
         <div style={box2}>
-          <Container></Container>
-          <Container></Container>
+          <Container4></Container4>
+          <Container3></Container3>
         </div>
       </div>
     </div>

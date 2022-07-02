@@ -29,28 +29,28 @@ const Container = (props) => {
     margin: "18px 2px 0px 76px",
     borderRadius: "9px",
   };
-  function handleOver1(e) {
-    document.getElementById("border1").style.borderColor = "#1e90ff";
-    document.getElementById("button1").style.background = "#1e90ff";
-    document.getElementById("button1").style.color = "white";
+  function handleOver3(e) {
+    document.getElementById("border3").style.borderColor = "#1e90ff";
+    document.getElementById("button3").style.background = "#1e90ff";
+    document.getElementById("button3").style.color = "white";
   }
-  function handleLeave1(e) {
-    document.getElementById("border1").style.borderColor = "#ebebeb";
-    document.getElementById("button1").style.background = "white";
-    document.getElementById("button1").style.color = "#1e90ff";
+  function handleLeave3(e) {
+    document.getElementById("border3").style.borderColor = "#ebebeb";
+    document.getElementById("button3").style.background = "white";
+    document.getElementById("button3").style.color = "#1e90ff";
   }
 
   return (
     <>
       <div
         style={mystyle}
-        onMouseEnter={handleOver1}
-        onMouseLeave={handleLeave1}
+        onMouseEnter={handleOver3}
+        onMouseLeave={handleLeave3}
       >
         <div className=" bg-white rounded-l-3xl rounded-tr-3xl rounded-br-3xl pb-6 shadow-lg mt-[20px] ">
           <div
             className="icon px-10  rounded-full  mr-[70px]  ml-[70px] mb-[20px] pt-[30px] pb-[04px]  border hover:border-sky-500"
-            id="border1"
+            id="border3"
             style={icons}
           >
             <img
@@ -65,7 +65,7 @@ const Container = (props) => {
           </div>
           <div
             className="  w-[120px] h-[43px] shadow-xl pl-[19px] pt-2   mt-[18px] mr-[20px] ml-[76px] rounded-lg  bg-white hover:bg-blue-500 text-blue-400 hover:text-white "
-            id="button1"
+            id="button3"
           >
             <a className="font-semibold  " href="VIEW MORE">
               {" "}
