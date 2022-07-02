@@ -15,7 +15,7 @@ const Technologies = () => {
           {Constants.DESCRIPTION}
         </p>
       </div>
-      <div className="flex flex-col space-y-6 mr-24">
+      <div className="flex flex-col space-y-6 mr-20">
         <div className="flex space-x-8">
           <div className="cursor-pointer scale-125 max-w-sm py-5 px-3 w-40  rounded-2xl overflow-hidden shadow-lg flex flex-col justify-center items-center bg-gradient-to-t from-blue-50 to-white">
             <div className="border border-blue-300 rounded-full bg-gradient-to-l p-2 from-slate-200">
