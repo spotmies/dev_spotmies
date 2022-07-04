@@ -27,7 +27,7 @@ const cardInfo = [
 
 const ProjectAcceptance = () => {
   return (
-    <div className="mx-auto justify-between my-[100px] w-[86%]">
+    <div className="mx-auto my-[100px] w-[86%]">
       <h2 className="text-5xl flex flex-col font-bold space-y-2 ml-10">
         <span>How we</span>
         <span>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Header = ({ projectRef, roadmapRef }) => {
@@ -8,10 +9,17 @@ const Header = ({ projectRef, roadmapRef }) => {
     roadmapRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <header className="flex items-center h-[70px] z-50 w-full">
+    <header className="flex items-center  z-50 w-full">
       <div className="flex justify-between items-center flex-grow ">
-        <div className="flex items-center ml-20 cursor-pointer">Logo</div>
-        <div className="text-gray-500 flex items-center text-sm space-x-28 mr-20">
+        <div className="flex h-20 items-center ml-20 cursor-pointer">
+          <Image
+            src="/assets/spotmies-logo.png"
+            height={150}
+            width={150}
+            objectFit="contain"
+          />
+        </div>
+        <div className="text-gray-500 h-[70px] flex items-center text-sm space-x-28 mr-20">
           <p className="cursor-pointer" onClick={executeScroll}>
             Projects
           </p>
