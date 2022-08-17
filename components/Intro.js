@@ -4,7 +4,7 @@ import * as Constants from "./Constants";
 
 const Intro = () => {
   return (
-    <div className="mx-auto flex my-[100px] w-[84%]">
+    <div className="mx-auto flex my-[100px] w-[84%] h-[90vh]">
       <div>
         <h2 className="text-5xl flex flex-col font-bold space-y-2">
           <span>Lorem ipsum</span>

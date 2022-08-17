@@ -5,7 +5,7 @@ import * as Constants from "./Constants";
 
 const Technologies = () => {
   return (
-    <div className="mx-auto justify-between flex my-[100px] w-[84%]">
+    <div className="mx-auto justify-between flex my-[100px] w-[84%] h-[100vh]">
       <div>
         <h2 className="text-5xl flex flex-col font-bold space-y-2">
           <span className="text-blue-400">Technologies</span>
