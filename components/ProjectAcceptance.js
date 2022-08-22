@@ -47,10 +47,10 @@ const ProjectAcceptance = () => {
           {cardInfo.map((info, i) => (
             <div
               key={i}
-              className="overflow-hidden h-[400px] w-[250px] py-8 px-6 will-change-transform flex flex-col flex-nowrap justify-start place-content-center gap-[20px] flex-grow-0 flex-shrink-0 basis-auto rounded-2xl bg-white cursor-pointer"
+              className="overflow-hidden h-[250px] w-[250px] py-8 px-6 will-change-transform flex flex-col flex-nowrap justify-start place-content-center gap-[20px] flex-grow-0 flex-shrink-0 basis-auto rounded-2xl bg-white cursor-pointer"
             >
-              <h3 className="text-3xl font-bold">{info.h}</h3>
-              <p className="text-md text-slate-500">{info.p}</p>
+              <h3 className="text-2xl font-bold">{info.h}</h3>
+              <p className="text-xs text-slate-500">{info.p}</p>
             </div>
           ))}
         </div>
