@@ -34,8 +34,10 @@ const Project = ({ projectRef }) => {
       className="mx-auto justify-between flex mb-32 w-[84%] h-[100vh]"
     >
       <div>
-        <h2 className="text-5xl font-bold mt-[120px]">
-          Our <span className="text-blue-400">Projects</span>
+        <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3">
+          <div className="rounded-full h-16 w-16 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -left-10 z-0"></div>
+          <p className="z-10">Our</p>{" "}
+          <span className="text-blue-400">Projects</span>
         </h2>
         <p className="w-[75%] mt-[60px] text-gray-500 text-lg">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rem
@@ -46,8 +48,9 @@ const Project = ({ projectRef }) => {
           View all
         </button>
       </div>
-      <div className="flex flex-col space-y-10 mt-9 mr-5">
-        <div className="flex space-x-10">
+      <div className="flex flex-col space-y-10 mt-9 mr-5 relative">
+        <div className="rounded-full h-[500px] w-[500px] bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -right-16 z-0"></div>
+        <div className="flex space-x-10 z-10">
           {cardInfo1.map((card) => (
             <div
               className={`cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-2xl overflow-hidden shadow-lg flex flex-col  items-center bg-gradient-to-t from-blue-50 to-white ${
@@ -93,7 +96,7 @@ const Project = ({ projectRef }) => {
           ))}
         </div>
 
-        <div className="flex space-x-10">
+        <div className="flex space-x-10 z-10">
           {cardInfo2.map((card) => (
             <div
               className={`cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-l from-blue-50 to-white ${

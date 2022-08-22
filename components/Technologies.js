@@ -7,16 +7,18 @@ const Technologies = () => {
   return (
     <div className="mx-auto justify-between flex my-[100px] w-[84%] h-[100vh]">
       <div>
-        <h2 className="text-5xl flex flex-col font-bold space-y-2">
-          <span className="text-blue-400">Technologies</span>
+        <h2 className="text-5xl flex flex-col font-bold space-y-2 relative">
+          <div className="rounded-full h-24 w-24 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -left-10 z-0"></div>
+          <span className="z-10 text-blue-400">Technologies</span>
           <span>we used</span>
         </h2>
         <p className="w-[60%] mt-10 text-gray-500 text-lg leading-tight">
           {Constants.DESCRIPTION}
         </p>
       </div>
-      <div className="flex flex-col space-y-6 mr-20">
-        <div className="flex space-x-8">
+      <div className="flex flex-col space-y-6 mr-20 relative">
+        <div className="rounded-full h-[580px] w-[580px] bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-16 -right-36 z-0"></div>
+        <div className="z-10 flex space-x-8">
           <div className="cursor-pointer scale-125 max-w-sm py-5 px-3 w-40  rounded-2xl overflow-hidden shadow-lg flex flex-col justify-center items-center bg-gradient-to-t from-blue-50 to-white">
             <div className="border border-blue-300 rounded-full bg-gradient-to-l p-2 from-slate-200">
               <Image
@@ -44,7 +46,7 @@ const Technologies = () => {
           </div>
         </div>
 
-        <div className="flex space-x-6 ml-8">
+        <div className="z-10 flex space-x-6 ml-8">
           <div className="cursor-pointer mt-6 transition hover:text-blue-500 hover:scale-125 duration-500 ease-in-out max-w-sm pt-3 pb-5 px-3 w-36 h-40 rounded-2xl overflow-hidden shadow-lg flex flex-col justify-center items-center bg-white">
             <Image
               className=" rounded-full bg-gradient-to-b from-slate-200 p-2"

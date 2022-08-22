@@ -103,8 +103,10 @@ const Testimonials = () => {
   });
 
   return (
-    <div className="mx-auto my-[100px] w-[87%] h-[100vh]">
+    <div className="mx-auto mt-[100px] w-[87%] h-[100vh] relative">
       <h1 className="text-4xl text-center font-bold mb-10">Testimonials</h1>
+      <div className="rounded-full h-48 w-48 bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-20 -left-20 z-0"></div>
+      <div className="rounded-full h-48 w-48 bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute -bottom-10 -right-20 z-0"></div>
       <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg w-[84%] h-[400px] rounded-[30px]">
         <div
           className="flex items-center justify-center space-x-24 ml-[15rem] overflow-hidden transition transform duration-1000 h-[100%] ease-linear"
@@ -114,14 +116,14 @@ const Testimonials = () => {
             <div
               onMouseEnter={() => setPaused(true)}
               onMouseLeave={() => setPaused(false)}
-              className={`cursor-pointer transition hover:scale-125 hover:flex flex-col items-center duration-500 ease-in-out group ${
-                p === people[people.length - 2] ? "scale-125 flex" : ""
-              }`}
+              className={`cursor-pointer transition hover:scale-125 hover:flex flex-col items-center duration-1000 ease-in-out group ${
+                p === people[5] || p === people[8] ? "scale-125 flex" : ""
+              } `}
             >
               <div
-                className={`group-hover:border-[1.5px] border-blue-400 rounded-full min-h-[80px] min-w-[85px] max-w-[85px] ${
-                  p === people[people.length - 2] ? "border-[1.5px]" : ""
-                }`}
+                className={`group-hover:border-[1.5px]  border-blue-400 rounded-full min-h-[80px] min-w-[85px] max-w-[85px] ${
+                  p === people[5] || p === people[8] ? "border-[1.5px]" : ""
+                } `}
               >
                 <Image
                   className=""
@@ -132,9 +134,9 @@ const Testimonials = () => {
                 />
               </div>
               <div
-                className={`flex-col group-hover:flex mt-5 w-[150px] ${
-                  p === people[people.length - 2] ? "flex" : "hidden"
-                }`}
+                className={`flex-col transition duration-800 ease-in-out group-hover:flex mt-5 w-[150px] ${
+                  p === people[5] || p === people[8] ? "flex" : "hidden"
+                } `}
               >
                 <p className="text-xs text-slate-400">{p.description}</p>
                 <p className="mt-3 font-semibold ml-24 text-xs">- {p.name}</p>

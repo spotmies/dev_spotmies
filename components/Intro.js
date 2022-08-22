@@ -4,7 +4,8 @@ import * as Constants from "./Constants";
 
 const Intro = () => {
   return (
-    <div className="mx-auto flex my-[100px] w-[84%] h-[90vh]">
+    <div className="mx-auto flex my-[100px] w-[84%] h-[90vh] relative">
+      <div className="rounded-full h-14 w-14 bg-gradient-to-bl from-[#dce4ec] to-slate-100 absolute -top-20 -right-20"></div>
       <div>
         <h2 className="text-5xl flex flex-col font-bold space-y-2">
           <span>Lorem ipsum</span>
@@ -19,8 +20,9 @@ const Intro = () => {
         </button>
       </div>
       <div className="mr-12">
-        <Image src="/slide1.png" width={500} height={460} objectFit="conatin" />
+        <Image src="/slide1.png" width={500} height={460} objectFit="contain" />
       </div>
+      <div className="rounded-full h-14 w-14 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute bottom-40 left-[30rem]"></div>
     </div>
   );
 };
