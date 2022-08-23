@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-100">
+      <main className="">
         <Header projectRef={projectRef} roadmapRef={roadmapRef} />
         <Intro />
         <Project projectRef={projectRef} />

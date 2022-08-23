@@ -27,13 +27,15 @@ const cardInfo = [
 
 const ProjectAcceptance = () => {
   return (
-    <div className="mx-auto my-[100px] w-[86%] h-[100vh]">
-      <h2 className="text-5xl flex flex-col font-bold space-y-2 ml-10">
-        <span>How we</span>
-        <span>
-          Accept the <b className="text-blue-400 font-bold">project</b>
+    <div className="mx-auto my-[100px] w-[86%] h-[100vh] relative">
+      <h2 className="text-5xl flex flex-col font-bold space-y-2 ml-10 ">
+        <span className="z-10">How we</span>
+        <span className="z-10">
+          Accept the <b className="text-blue-400 font-bold z-10">project</b>
         </span>
       </h2>
+      <div className="rounded-full h-[500px] w-[500px] bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-10 -left-24 z-0"></div>
+      <div className="rounded-full h-[200px] w-[200px] bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute bottom-10 -right-10 z-0"></div>
       <div className="flex justify-between overflow-y-scroll scrollbar-hide">
         <div className="bg-white sticky left-0 top-[40px] overflow-hidden flex justify-center items-center shadow-lg h-[400px] w-[70%] rounded-[40px] mt-10">
           <Image
@@ -43,7 +45,7 @@ const ProjectAcceptance = () => {
             objectFit="contain"
           />
         </div>
-        <div className="overflow-visible h-[400px] mt-11 min-w-min flex flex-col flex-nowrap justify-start place-content-center items-center gap-[40px] p-0 flex-grow-0 flex-shrink-0 basis-auto">
+        <div className="overflow-visible h-[400px] mt-11 min-w-min flex flex-col flex-nowrap justify-start place-content-center items-center gap-[40px] p-0 flex-grow-0 flex-shrink-0 basis-auto relative">
           {cardInfo.map((info, i) => (
             <div
               key={i}

@@ -3,9 +3,10 @@ import React from "react";
 
 const Collaboration = () => {
   return (
-    <div className="mx-auto my-[200px] w-[84%] ">
-      <h2 className="text-5xl font-bold mb-16">Collaborations</h2>
-      <div className="flex justify-center items-center">
+    <div className="mx-auto my-[200px] w-[84%] relative">
+      <h2 className="z-10 text-5xl font-bold mb-16">Collaborations</h2>
+      <div className="rounded-full h-[500px] w-[500px] bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute top-12 -left-24 z-0"></div>
+      <div className="z-10 flex justify-center items-center">
         <div className="flex flex-col mr-14">
           <div className="flex">
             <Image
