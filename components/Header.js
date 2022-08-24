@@ -9,9 +9,9 @@ const Header = ({ projectRef, roadmapRef }) => {
     roadmapRef.current.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <header className="flex items-center h-[10vh]  z-50 w-full">
+    <header className="flex items-center md:h-[10vh]  z-50 w-full">
       <div className="flex justify-between items-center flex-grow ">
-        <div className="flex h-20 items-center ml-20 cursor-pointer">
+        <div className="flex h-20 items-center ml-5 md:ml-20 cursor-pointer">
           <Image
             src="/assets/spotmies-logo.png"
             height={150}
@@ -19,7 +19,7 @@ const Header = ({ projectRef, roadmapRef }) => {
             objectFit="contain"
           />
         </div>
-        <div className="text-gray-500 h-[70px] flex items-center text-sm space-x-28 mr-20">
+        <div className="text-gray-500 h-[70px] hidden md:flex items-center text-sm space-x-28 mr-20">
           <p className="cursor-pointer" onClick={executeScroll}>
             Projects
           </p>
