@@ -1,5 +1,4 @@
-import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const people = [
   {
@@ -112,13 +111,17 @@ const Testimonials = () => {
   });
 
   return (
-    <div className="mx-auto mt-[100px] w-[87%] h-[100vh] relative">
-      <h1 className="text-4xl text-center font-bold mb-10">Testimonials</h1>
-      <div className="rounded-full h-48 w-48 bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-20 -left-20 z-0"></div>
-      <div className="rounded-full h-48 w-48 bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute -bottom-10 -right-20 z-0"></div>
-      <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg w-[84%] h-[400px] rounded-[30px]">
+    <div className="mx-auto my-[200px] md:mt-[100px] md:w-[87%] md:h-[100vh] relative">
+      <h1 className="text-4xl text-center font-bold ml-20 md:ml-0 mb-10">
+        Testimonials
+      </h1>
+
+      <div className="hidden md:block rounded-full h-48 w-48 bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-20 -left-20 z-0"></div>
+      <div className="hidden md:block rounded-full h-48 w-48 bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute -bottom-10 -right-20 z-0"></div>
+
+      <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg md:w-[84%] h-[300px] w-[450px] md:h-[400px] rounded-[30px] ml-4 md:ml-24">
         <div
-          className="flex items-center justify-center space-x-24 ml-[15rem] overflow-hidden transition transform duration-1000 h-[100%] ease-linear"
+          className="flex items-center justify-center md:space-x-24 space-x-5 ml-[5rem] md:ml-[15rem] overflow-hidden transition transform duration-1000 h-[100%] ease-linear"
           style={{ transform: `translateX(-${activeIndex * 10}%)` }}
         >
           {people.map((p, index) => (
@@ -128,12 +131,12 @@ const Testimonials = () => {
                 setexpandIndex(index);
               }}
               onMouseLeave={() => setPaused(false)}
-              className={`cursor-pointer transition hover:scale-125 hover:flex flex-col items-center duration-1000 ease-in-out group ${
-                index === expandIndex ? "scale-125 flex" : ""
+              className={`cursor-pointer transition md:hover:scale-125 hover:scale-100 hover:flex flex-col items-center duration-1000 ease-in-out group ${
+                index === expandIndex ? "scale-100 md:scale-125 flex" : ""
               } `}
             >
               <div
-                className={`group-hover:border-[1.5px]  border-blue-400 rounded-full min-h-[80px] min-w-[85px] max-w-[85px] ${
+                className={`group-hover:border-[1.5px]  border-blue-400 rounded-full min-h-[80px] md:min-w-[85px] min-w-[55px] md:max-w-[85px] ${
                   index === expandIndex ? "border-[1.5px]" : ""
                 } `}
               >

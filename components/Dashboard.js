@@ -3,9 +3,9 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <div className="relative mt-40">
+    <div className="relative my-[280px] md:my-0 md:block flex flex-col gap-16 items-center justify-center">
       <div className="rounded-full h-24 w-24 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-28 left-10"></div>
-      <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg  w-[84%] h-[500px] rounded-[30px]">
+      <div className="mx-auto hidden md:flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg  w-[84%] h-[500px] rounded-[30px]">
         <h1 className="text-5xl mt-[130px] font-bold">What we have</h1>
         <div className="flex items-center space-x-12">
           <Image
@@ -66,6 +66,72 @@ const Dashboard = () => {
               src="/assets/spotmies-logo.png"
               height={120}
               width={120}
+              objectFit="contain"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* mobile-view */}
+      <div className="mx-auto ml-10 md:hidden flex justify-evenly bg-white overflow-hidden shadow-lg  w-full h-[320px] rounded-[30px]">
+        <div className="">
+          <h1 className="text-3xl mt-10 font-bold">What we have</h1>
+          <div className="flex items-center space-x-12">
+            <Image
+              className=""
+              src="/assets/engineer.png"
+              height={200}
+              width={200}
+              objectFit="contain"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col justify-center space-y-5">
+          <div className="bg-gradient-to-r from-slate-100   rounded-lg shadow-lg flex flex-col border border-blue-500 py-2 h-15 w-[100px] justify-center items-center">
+            <span className="text-xl font-semibold">3+</span>
+            <p className="text-[8px] text-slate-400 font-semibold mt-1">
+              years of experience
+            </p>
+          </div>
+          <div className=" bg-gradient-to-r from-slate-100   rounded-lg shadow-lg flex flex-col  border border-blue-500 py-2 h-15 w-[100px] justify-center items-center">
+            <span className=" text-xl font-semibold">18+</span>
+            <p className=" text-[8px] text-slate-400 font-semibold mt-1">
+              world wide clients
+            </p>
+          </div>
+          <div className=" bg-gradient-to-r from-slate-100   rounded-lg shadow-lg flex flex-col  border border-blue-500 py-2 h-15 w-[100px] justify-center items-center">
+            <span className=" text-xl font-semibold">25+</span>
+            <p className=" text-[8px] text-slate-400 font-semibold mt-1">
+              projects completed
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center flex-col ml-20">
+        <h1 className="md:hidden text-2xl font-semibold">Our Clients</h1>
+        <div className="md:hidden -mt-2 flex space-x-12">
+          <div>
+            <Image
+              src="/assets/go-kart.png"
+              height={100}
+              width={100}
+              objectFit="contain"
+            />
+          </div>
+          <div>
+            <Image
+              src="/assets/spotmies-logo.png"
+              height={100}
+              width={100}
+              objectFit="contain"
+            />
+          </div>
+          <div>
+            <Image
+              src="/assets/go-kart.png"
+              height={100}
+              width={100}
               objectFit="contain"
             />
           </div>
