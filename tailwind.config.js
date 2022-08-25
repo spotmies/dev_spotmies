@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    // screens: {
+    //   iPhone: "380px",
+    // },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };
