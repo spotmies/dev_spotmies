@@ -27,16 +27,41 @@ const cardInfo = [
 
 const ProjectAcceptance = () => {
   return (
-    <div className="mx-auto my-[100px] w-[86%] h-[100vh] relative">
-      <h2 className="text-5xl flex flex-col font-bold space-y-2 ml-10 ">
+    <div className="mx-auto md:block flex flex-col md:space-y-0 space-y-16 mb-[150px] md:mb-0 my-[100px]  md:w-[86%] md:h-[100vh] relative">
+      <h2 className="text-4xl md:text-5xl flex flex-col font-bold space-y-2 ml-10 md:ml-10 ">
         <span className="z-10">How we</span>
         <span className="z-10">
           Accept the <b className="text-blue-400 font-bold z-10">project</b>
         </span>
       </h2>
-      <div className="rounded-full h-[500px] w-[500px] bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-10 -left-24 z-0"></div>
-      <div className="rounded-full h-[200px] w-[200px] bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute bottom-10 -right-10 z-0"></div>
-      <div className="flex justify-between overflow-y-scroll scrollbar-hide">
+
+      <div className="md:hidden text-center ml-20">
+        <Image
+          src="/assets/group.png"
+          height={250}
+          width={300}
+          objectFit="cover"
+        />
+      </div>
+
+      <div className="ml-5 md:hidden overflow-x-scroll scrollbar-hide w-[450px]">
+        <div className="overflow-visible min-w-min flex  flex-nowrap justify-start place-content-center items-center gap-[20px] p-0 flex-grow-0 flex-shrink-0 basis-auto relative">
+          {cardInfo.map((info, i) => (
+            <div
+              key={i}
+              className="overflow-hidden h-[180px] w-[350px] py-6 px-8 flex flex-col place-content-center gap-[10px] flex-grow-0 flex-shrink-0 rounded-2xl bg-white cursor-pointer"
+            >
+              <h3 className="text-xl font-bold">{info.h}</h3>
+              <p className="text-xs text-slate-500">{info.p}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="hidden md:block rounded-full h-[500px] w-[500px] bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-10 -left-24 z-0"></div>
+      <div className="hidden md:block rounded-full h-[200px] w-[200px] bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute bottom-10 -right-10 z-0"></div>
+
+      <div className="hidden md:flex justify-between overflow-y-scroll scrollbar-hide">
         <div className="bg-white sticky left-0 top-[40px] overflow-hidden flex justify-center items-center shadow-lg h-[400px] w-[70%] rounded-[40px] mt-10">
           <Image
             src="/assets/group.png"
