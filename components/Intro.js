@@ -20,10 +20,10 @@ const Intro = () => {
             objectFit="contain"
           />
         </div>
-        <p className="md:w-[60%] w-full mt-10 text-gray-500 text-xl md:text-lg leading-tight text-center md:text-left iPhone:ml-20 ml-28 md:ml-0">
+        <p className="md:w-[60%] w-full mt-10 text-gray-500 text-xl md:text-lg leading-tight text-center md:text-left iPhone:ml-16 ml-28 md:ml-0">
           {Constants.DESCRIPTION}
         </p>
-        <button className="md:mt-10  md:mb-5 text-blue-400 md:border-none border-[1.5px] border-blue-400 md:bg-blue-400  md:text-white mr-10 md:mr-0  py-[8px] md:px-[22px] px-[50px] rounded-lg">
+        <button className="md:mt-10  md:mb-5 text-blue-400 md:border-none border-[1.5px] border-blue-400 md:bg-blue-400  md:text-white iPhone:ml-16 ml-24 md:ml-0 py-[8px] md:px-[22px] px-[50px] rounded-lg">
           Send Request
         </button>
       </div>

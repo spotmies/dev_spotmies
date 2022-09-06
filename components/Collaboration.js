@@ -3,8 +3,8 @@ import React from "react";
 
 const Collaboration = () => {
   return (
-    <div className="mx-auto my-[200px] md:w-[84%] relative">
-      <h2 className="z-10 md:hidden text-4xl md:text-5xl font-bold mb-16 ml-16">
+    <div className="mx-auto md:block flex flex-col items-center my-[200px] md:w-[84%] relative">
+      <h2 className="z-10 md:hidden text-4xl md:text-5xl font-bold mb-16 ml-24 iPhone:ml-16">
         Collaborations
       </h2>
       <div className="hidden md:block rounded-full h-[500px] w-[500px] bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute top-12 -left-24 z-0"></div>
@@ -46,7 +46,7 @@ const Collaboration = () => {
             />
           </div>
         </div>
-        <div className="md:w-[45%] ml-8 md:ml-0">
+        <div className="md:w-[45%] iPhone:ml-5 ml-8 md:ml-0">
           <h2 className="text-4xl md:text-5xl font-semibold mb-5 md:mb-10 text-center md:text-left">
             MADANGLES
           </h2>
