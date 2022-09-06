@@ -73,6 +73,9 @@ const Dashboard = () => {
       </div>
 
       {/* mobile-view */}
+      <h1 className="md:hidden text-4xl ml-20 Iphone:ml-14 font-bold">
+        Our Clients
+      </h1>
       <div className="iPhone:ml-10 ml-14 mx-auto md:hidden flex justify-evenly bg-white overflow-hidden shadow-lg w-full h-[320px] rounded-[30px]">
         <div className="">
           <h1 className="text-3xl mt-10 font-bold">What we have</h1>
@@ -108,33 +111,30 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="flex items-center flex-col ml-20">
-        <h1 className="md:hidden text-2xl font-semibold">Our Clients</h1>
-        <div className="md:hidden -mt-2 flex space-x-12">
-          <div>
-            <Image
-              src="/assets/go-kart.png"
-              height={100}
-              width={100}
-              objectFit="contain"
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/spotmies-logo.png"
-              height={100}
-              width={100}
-              objectFit="contain"
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/go-kart.png"
-              height={100}
-              width={100}
-              objectFit="contain"
-            />
-          </div>
+      <div className="md:hidden -mt-5 flex space-x-12 ml-24 iPhone:ml-20">
+        <div>
+          <Image
+            src="/assets/go-kart.png"
+            height={100}
+            width={100}
+            objectFit="contain"
+          />
+        </div>
+        <div>
+          <Image
+            src="/assets/spotmies-logo.png"
+            height={100}
+            width={100}
+            objectFit="contain"
+          />
+        </div>
+        <div>
+          <Image
+            src="/assets/go-kart.png"
+            height={100}
+            width={100}
+            objectFit="contain"
+          />
         </div>
       </div>
     </div>

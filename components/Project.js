@@ -34,7 +34,7 @@ const Project = ({ projectRef }) => {
       className="mx-auto justify-between flex md:mb-32 w-[84%] md:h-[100vh]"
     >
       <div className="flex md:block flex-col items-center space-y-10">
-        <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-44">
+        <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
           <div className="rounded-full h-16 w-16 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -left-10 z-0"></div>
           <p className="z-10">Our</p>{" "}
           <span className="text-blue-400">Projects</span>
