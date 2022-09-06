@@ -119,7 +119,7 @@ const Testimonials = () => {
       <div className="hidden md:block rounded-full h-48 w-48 bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-20 -left-20 z-0"></div>
       <div className="hidden md:block rounded-full h-48 w-48 bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute -bottom-10 -right-20 z-0"></div>
 
-      <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg md:w-[84%] h-[300px] w-[450px] md:h-[400px] rounded-[30px] ml-4 md:ml-24">
+      <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg md:w-[950px] h-[300px] w-[450px] md:h-[400px] rounded-[30px] ml-4 md:ml-24">
         <div
           className="flex items-center justify-center md:space-x-24 space-x-5 ml-[5rem] md:ml-[15rem] overflow-hidden transition transform duration-1000 h-[100%] ease-linear"
           style={{ transform: `translateX(-${activeIndex * 10}%)` }}
