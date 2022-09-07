@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const people = [
   {
@@ -83,6 +83,8 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [expandIndex, setexpandIndex] = useState(5);
+  const [info, setInfo] = useState(null);
+  const infoRef = useRef(null);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
@@ -90,7 +92,6 @@ const Testimonials = () => {
     } else if (newIndex >= people.length - 7) {
       newIndex = 0;
     }
-    console.log(newIndex);
     setTimeout(() => {
       setexpandIndex(newIndex + 5);
     }, 300);
@@ -109,6 +110,34 @@ const Testimonials = () => {
       }
     };
   });
+
+  useEffect(() => {
+    setInfo(infoRef.current);
+  }, []);
+
+  function showInfo(info) {
+    if (info.classList.contains("hidden")) {
+      info.classList.remove("hidden");
+      info.classList.add("flex");
+      setTimeout(function () {
+        info.classList.remove("opacity-0");
+      }, 20);
+    } else {
+      info.classList.add("opacity-0");
+      info.classList.remove("flex");
+      info.addEventListener(
+        "transitionend",
+        function (e) {
+          info.classList.add("hidden");
+        },
+        {
+          capture: false,
+          once: true,
+          passive: false,
+        }
+      );
+    }
+  }
 
   return (
     <div className="mx-auto my-[200px] md:mt-[100px] md:w-[87%] md:h-[100vh] relative">
@@ -130,7 +159,10 @@ const Testimonials = () => {
                 setPaused(true);
                 setexpandIndex(index);
               }}
-              onMouseLeave={() => setPaused(false)}
+              onMouseLeave={() => {
+                setPaused(false);
+                setexpandIndex(index + 1);
+              }}
               className={`cursor-pointer transition md:hover:scale-125 hover:scale-100 hover:flex flex-col items-center duration-1000 ease-in-out group ${
                 index === expandIndex ? "scale-100 md:scale-125 flex" : ""
               } `}
@@ -149,8 +181,13 @@ const Testimonials = () => {
                 />
               </div>
               <div
-                className={`flex-col transition duration-800 ease-in-out group-hover:flex mt-5 w-[150px] 
-                ${index === expandIndex ? "flex" : "hidden"} 
+                ref={infoRef}
+                className={`flex-col transition duration-1000 flex ease-in-out mt-5 w-[150px] 
+                ${
+                  index === expandIndex
+                    ? () => showInfo(info)
+                    : "hidden opacity-0"
+                } 
                 `}
               >
                 <p className="text-xs text-slate-400">{p.description}</p>
