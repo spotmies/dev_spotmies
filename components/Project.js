@@ -123,11 +123,11 @@ const Project = ({ projectRef }) => {
           </div>
         </div>
 
-        <button className="md:hidden mt-10 mb-5 hover:bg-blue-400 hover:text-white text-blue-400 border-[1.5px] border-blue-400 py-[6px] px-[32px] rounded-3xl ml-72">
+        <button className="md:hidden mt-10 mb-5 hover:bg-blue-400 hover:text-white text-blue-400 border-[1.5px] border-blue-400 py-[6px] px-[32px] rounded-3xl mr-72">
           View all
         </button>
 
-        <p className="md:w-[75%] mt-[60px] text-gray-500 text-lg">
+        <p className="md:w-[75%] mt-[60px] text-gray-500 text-lg mr-3 md:mr-0">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rem
           odio, cum quam maxime, veniam dolor tempore ut rerum magni sint,
           incidunt alias error autem voluptatibus natus excepturi eos! Cum.
