@@ -25,16 +25,16 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <Testimonials/>
-        {/*<Header projectRef={projectRef} roadmapRef={roadmapRef} />*/}
-        {/*<Intro />*/}
-        {/*<Project projectRef={projectRef} />*/}
-        {/*<Dashboard />*/}
-        {/*<Collaboration />*/}
-        {/*<Technologies />*/}
-        {/*<RoadMap roadmapRef={roadmapRef} />*/}
-        {/*<ProjectAcceptance />*/}
-        {/*<Testimonials />*/}
+        {/*<Testimonials/>*/}
+        <Header projectRef={projectRef} roadmapRef={roadmapRef} />
+        <Intro />
+        <Project projectRef={projectRef} />
+        <Dashboard />
+        <Collaboration />
+        <Technologies />
+        <RoadMap roadmapRef={roadmapRef} />
+        <ProjectAcceptance />
+        <Testimonials />
       </main>
     </div>
   );

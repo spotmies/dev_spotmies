@@ -181,7 +181,7 @@ const Testimonials = () => {
                         </div>
                     </div>
                 </div>}
-            <div className="bg-gray-100 h-96 mx-auto"></div>
+            <div className="bg-gray-100 h-24 mx-auto"></div>
         </div>
     );
 };

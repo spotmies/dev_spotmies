@@ -31,14 +31,14 @@ const Project = ({ projectRef }) => {
   return (
     <div
       ref={projectRef}
-      className="mx-auto justify-between flex md:mb-32 w-[84%] md:h-[100vh]"
+      className="mx-auto justify-between flex  w-[84%] md:h-[100vh]"
     >
       <div className="flex md:block flex-col items-center space-y-10">
-        <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
+        <h2 className="text-5xl font-bold mt-[60px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
           <p className="z-10">Our</p>{" "}
           <span className="text-blue-400">Projects</span>
         </h2>
-        <div className="md:hidden flex flex-col space-y-10 mt-9 mr-5 relative">
+        <div className="md:hidden flex flex-col space-y-10 mr-5 relative">
           <div className="flex space-x-10 z-10">
             {cardInfo1.map((card) => (
               <div

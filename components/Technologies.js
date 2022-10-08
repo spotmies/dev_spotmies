@@ -18,7 +18,7 @@ const Technologies = () => {
   };
 
   return (
-    <div className="mx-auto justify-between flex my-[100px] mb-[220px] w-[84%] md:h-[100vh]">
+    <div className="mx-auto justify-between flex w-[84%] md:h-[100vh]">
       <div className="md:flex flex-col space-y-24">
         <h2 className="text-5xl text-center md:text-left flex flex-col font-bold space-y-2 relative">
           <div className="rounded-full h-24 w-24 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -left-10 z-0"></div>
