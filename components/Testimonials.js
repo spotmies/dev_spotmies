@@ -140,67 +140,62 @@ const Testimonials = () => {
   }
 
   return (
-    <div className="mx-auto my-[200px] md:mt-[100px] md:w-[87%] md:h-[100vh] relative">
-      <h1 className="text-4xl text-center font-bold ml-20 md:ml-0 mb-10">
+      <div>
+        <div className="mx-auto  md:w-[87%] my-8 mb-16">
+      <h1 className="text-lg text-center mb-3 uppercase text-gray-400">
         Testimonials
       </h1>
-
-      <div className="hidden md:block rounded-full h-48 w-48 bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-20 -left-20 z-0"></div>
-      <div className="hidden md:block rounded-full h-48 w-48 bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute -bottom-10 -right-20 z-0"></div>
-
-      <div className="mx-auto flex flex-col justify-center items-center bg-white overflow-hidden shadow-lg md:w-[950px] h-[300px] w-[450px] md:h-[400px] rounded-[30px] ml-4 md:ml-24">
-        <div
-          className="flex items-center justify-center md:space-x-24 space-x-5 ml-[5rem] md:ml-[15rem] overflow-hidden transition transform duration-1000 h-[100%] ease-linear"
-          style={{ transform: `translateX(-${activeIndex * 10}%)` }}
-        >
-          {people.map((p, index) => (
-            <div
-              onMouseEnter={() => {
-                setPaused(true);
-                setexpandIndex(index);
-              }}
-              onMouseLeave={() => {
-                setPaused(false);
-                setexpandIndex(index + 1);
-              }}
-              className={`cursor-pointer transition md:hover:scale-125 hover:scale-100 hover:flex flex-col items-center duration-1000 ease-in-out group ${
-                index === expandIndex ? "scale-100 md:scale-125 flex" : ""
-              } `}
-            >
-              <div
-                className={`group-hover:border-[1.5px]  border-blue-400 rounded-full min-h-[80px] md:min-w-[85px] min-w-[55px] md:max-w-[85px] ${
-                  index === expandIndex ? "border-[1.5px]" : ""
-                } `}
-              >
-                <img
-                  className=""
-                  src={p.image}
-                  height={80}
-                  width={85}
-                  objectFit="contain"
-                />
-              </div>
-              <div
-                ref={infoRef}
-                className={`flex-col transition duration-1000 flex ease-in-out mt-5 w-[150px] 
-                ${
-                  index === expandIndex
-                    ? () => showInfo(info)
-                    : "hidden opacity-0"
-                } 
-                `}
-              >
-                <p className="text-xs text-slate-400">{p.description}</p>
-                <p className="mt-3 font-semibold ml-24 text-xs">- {p.name}</p>
-                <p className="text-[10px] ml-24 text-slate-400">
-                  {p.designation}
-                </p>
-              </div>
-            </div>
-          ))}
+      <h2 className="text-4xl text-center font-bold mb-8">What our clients say about us</h2>
+      <div className="flex flex-row h-96 mt-16">
+        <div className="w-1/3 mt-16">
+          <img src="/assets/quotes.png" className="w-8 h-8 mb-4"/>
+          <p className="text-2xl pb-8 text-gray-600">They are the best people. And this is the best platform to learn from distance.</p>
+          <h3 className="font-bold pb-8">- Ben Foakes, <span className="text-gray-300">Student</span></h3>
+          <a href="" className="px-4 py-2 mr-4 rounded-full outline outline-gray-700">&#60;</a>
+          <a href="" className="px-4 py-2 rounded-full bg-blue-500 outline outline-blue-500 text-white">&#62;</a>
+        </div>
+        <div className="grow justify-center items-center flex relative ml-16">
+          <div className="mx-auto">
+            <img className="w-28 h-28 mx-auto translate-x-36 -translate-y-8" src={people[4]["image"]}/>
+            <img className="w-24 h-24 mx-auto translate-y-16" src={people[4]["image"]}/>
+            <img className="w-20 h-20 mx-auto translate-x-48 translate-y-16" src={people[4]["image"]}/>
+          </div>
+          <img className="w-48 h-48 mx-auto" src={people[4]["image"]}/>
+          <div className="mx-auto">
+            <img className="w-32 h-32 mx-auto -translate-x-36 -translate-y-20" src={people[4]["image"]}/>
+            <img className="w-24 h-24 mx-auto -translate-x-28 translate-y-20" src={people[4]["image"]}/>
+          </div>
         </div>
       </div>
+
     </div>
+      <div className="bg-gray-100 h-96 mx-auto"></div>
+
+        <div className="mx-auto  md:w-[87%] my-8 mb-16 pb-12">
+          <h1 className="text-lg text-center mb-3 uppercase text-gray-400">
+            Testimonials
+          </h1>
+          <h2 className="text-4xl text-center font-bold mb-8">What our clients say about us</h2>
+          <div className="flex h-56 mt-12">
+
+            <div className="justify-center items-center flex mx-auto">
+              <img className="w-32 h-32 mx-8" src={people[4]["image"]}/>
+              <img className="w-4- h-40 mx-8" src={people[4]["image"]}/>
+              <img className="w-48 h-48 mx-8" src={people[4]["image"]}/>
+              <img className="w-40 h-40 mx-8" src={people[4]["image"]}/>
+              <img className="w-32 h-32 mx-8" src={people[4]["image"]}/>
+            </div>
+          </div>
+          <div className="mt-16 mx-auto">
+            <img src="/assets/quotes.png" className="w-8 h-8 mb-4"/>
+            <p className="text-2xl pb-8 text-gray-600">They are the best people. And this is the best platform to learn from distance.</p>
+
+            <h3 className="font-bold pb-8">- Ben Foakes, <span className="text-gray-300">Student</span></h3>
+            <a href="" className="px-4 py-2 mr-4 rounded-full outline outline-gray-700">&#60;</a>
+            <a href="" className="px-4 py-2 rounded-full bg-blue-500 outline outline-blue-500 text-white">&#62;</a>
+          </div>
+        </div>
+ </div>
   );
 };
 

@@ -58,11 +58,8 @@ const ProjectAcceptance = () => {
         </div>
       </div>
 
-      <div className="hidden md:block rounded-full h-[500px] w-[500px] bg-gradient-to-r from-[#dce4ec] to-slate-100 absolute -top-10 -left-24 z-0"></div>
-      <div className="hidden md:block rounded-full h-[200px] w-[200px] bg-gradient-to-l from-[#dce4ec] to-slate-100 absolute bottom-10 -right-10 z-0"></div>
-
       <div className="hidden md:flex justify-between overflow-y-scroll scrollbar-hide">
-        <div className="bg-white sticky left-0 top-[40px] overflow-hidden flex justify-center items-center shadow-lg h-[400px] w-[70%] rounded-[40px] mt-10">
+        <div className="bg-white sticky left-0 top-[40px] overflow-hidden flex justify-center items-center h-[400px] w-[70%]">
           <Image
             src="/assets/group.png"
             height={600}

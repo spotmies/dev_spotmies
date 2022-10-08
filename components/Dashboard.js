@@ -4,8 +4,7 @@ import React from "react";
 const Dashboard = () => {
   return (
     <div className="relative my-[250px] md:my-0 md:block flex flex-col gap-16 items-center justify-center">
-      <div className="rounded-full h-24 w-24 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-28 left-10"></div>
-      <div className="mx-auto hidden md:flex flex-col justify-center items-center bg-gradient-to-r from-white to-blue-50 overflow-hidden shadow-lg  w-[84%] h-[85vh] rounded-[30px]">
+     <div className="mx-auto hidden md:flex flex-col justify-center items-center bg-gradient-to-r from-white to-blue-50 overflow-hidden shadow-lg  w-[84%] h-[85vh] rounded-[30px]">
         <h1 className="text-5xl mt-[130px] font-bold">What we have</h1>
         <div className="flex items-center space-x-12">
           <Image

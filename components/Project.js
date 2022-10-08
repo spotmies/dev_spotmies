@@ -35,12 +35,10 @@ const Project = ({ projectRef }) => {
     >
       <div className="flex md:block flex-col items-center space-y-10">
         <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
-          <div className="rounded-full h-16 w-16 bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -left-10 z-0"></div>
           <p className="z-10">Our</p>{" "}
           <span className="text-blue-400">Projects</span>
         </h2>
         <div className="md:hidden flex flex-col space-y-10 mt-9 mr-5 relative">
-          <div className="hidden md:block rounded-full h-[500px] w-[500px] bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -right-16 z-0"></div>
           <div className="flex space-x-10 z-10">
             {cardInfo1.map((card) => (
               <div
@@ -138,11 +136,10 @@ const Project = ({ projectRef }) => {
       </div>
 
       <div className="hidden md:flex flex-col space-y-10 mt-9 mr-5 relative">
-        <div className="rounded-full h-[500px] w-[500px] bg-gradient-to-br from-[#dce4ec] to-slate-100 absolute -top-10 -right-16 z-0"></div>
         <div className="flex space-x-10 z-10">
           {cardInfo1.map((card) => (
             <div
-              className={`cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-2xl overflow-hidden shadow-lg flex flex-col  items-center bg-gradient-to-t from-blue-50 to-white group ${
+              className={`cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-2xl overflow-hidden shadow-lg flex flex-col  items-center  group ${
                 card === cardInfo1[1] ? "-mt-10" : ""
               }`}
             >
@@ -183,7 +180,7 @@ const Project = ({ projectRef }) => {
         <div className="flex space-x-10 z-10">
           {cardInfo2.map((card) => (
             <div
-              className={`cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-l from-blue-50 to-white group ${
+              className={`cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-xl overflow-hidden shadow-lg flex flex-col items-center group ${
                 card === cardInfo2[1] ? "-mt-6" : ""
               }`}
             >
