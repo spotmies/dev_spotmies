@@ -55,44 +55,44 @@ const RoadMap = ({ roadmapRef }) => {
   };
 
   return (
-    <div
-      ref={roadmapRef}
-      className="mx-auto md:hidden mb-[200px] flex flex-col justify-center items-center md:my-[100px] md:w-[87%] md:h-[100vh]"
-    >
-      <h2 className="text-3xl text-center font-bold relative flex gap-2 mb-8 md:mb-0 ml-20">
-        <p className="text-blue-400">Road</p> <span className="">Map</span>
-      </h2>
-      <ol className="border-l-2 border-blue-400 ml-24">
-        {projects.map((project, i) => (
-          <li
-            ref={moreRef}
-            class={`mb-8 ml-4 relative ${i >= 4 ? "hidden" : ""}`}
-          >
-            <div class="absolute w-7 h-7 bg-white rounded-full -left-14 -top-2 border flex justify-center items-center border-blue-400 text-xs font-bold">
-              0{i + 1}
-            </div>
-            <div class="absolute w-2.5 h-2.5 bg-white rounded-full -left-[1.4rem] border border-blue-400"></div>
+      <div
+          ref={roadmapRef}
+          className="mx-auto md:hidden mb-[200px] flex flex-col justify-center items-center md:my-[100px] md:w-[87%] md:h-[100vh]"
+      >
+        <h2 className="text-3xl text-center font-bold relative flex gap-2 mb-8 md:mb-0 ml-20">
+          <p className="text-blue-400">Road</p> <span className="">Map</span>
+        </h2>
+        <ol className="border-l-2 border-blue-400 ml-24">
+          {projects.map((project, i) => (
+              <li
+                  ref={moreRef}
+                  class={`mb-8 ml-4 relative ${i >= 4 ? "hidden" : ""}`}
+              >
+                <div class="absolute w-7 h-7 bg-white rounded-full -left-14 -top-2 border flex justify-center items-center border-blue-400 text-xs font-bold">
+                  0{i + 1}
+                </div>
+                <div class="absolute w-2.5 h-2.5 bg-white rounded-full -left-[1.4rem] border border-blue-400"></div>
 
-            <h3 class="text-lg  font-semibold ">{project.title}</h3>
-            <p class="text-xs font-normal text-gray-500">
-              {project.description}
-            </p>
-          </li>
-        ))}
-        <div
-          onClick={toggle}
-          className="ml-5 flex items-center gap-2 text-lg font-semibold text-blue-500"
-        >
-          <p ref={buttonRef}>View more</p>{" "}
-          <p
-            ref={arrowRef}
-            className="border border-blue-500 rounded-full h-4 w-4 flex justify-center items-center mt-1"
+                <h3 class="text-lg  font-semibold ">{project.title}</h3>
+                <p class="text-xs font-normal text-gray-500">
+                  {project.description}
+                </p>
+              </li>
+          ))}
+          <div
+              onClick={toggle}
+              className="ml-5 flex items-center gap-2 text-lg font-semibold text-blue-500"
           >
-            ˅
-          </p>
-        </div>
-      </ol>
-    </div>
+            <p ref={buttonRef}>View more</p>{" "}
+            <p
+                ref={arrowRef}
+                className="border border-blue-500 rounded-full h-4 w-4 flex justify-center items-center mt-1"
+            >
+              ˅
+            </p>
+          </div>
+        </ol>
+      </div>
   );
 };
 

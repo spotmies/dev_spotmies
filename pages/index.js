@@ -11,6 +11,7 @@ import RoadMap from "../components/RoadMap";
 import Technologies from "../components/Technologies";
 import Testimonials from "../components/Testimonials";
 import styles from "../styles/Home.module.css";
+import LottieHeader from "../components/LottieHeader";
 
 export default function Home() {
   const projectRef = useRef(null);
