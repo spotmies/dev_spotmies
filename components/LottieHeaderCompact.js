@@ -1,8 +1,8 @@
-import React from "react";
+import animationData from "../public/assets/35799-3-animation.json";
 import Lottie from "react-lottie";
-import animationData from "./../public/assets/35799-3-animation.json";
+import React from "react";
 
-function LottieHeader() {
+function LottieHeaderCompact() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -12,7 +12,7 @@ function LottieHeader() {
         },
     };
 
-    return <Lottie options={defaultOptions} height={400} width={400} />;
+    return <Lottie options={defaultOptions} height={200} width={200} />;
 }
 
-export default LottieHeader;
+export default LottieHeaderCompact;

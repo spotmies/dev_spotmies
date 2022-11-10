@@ -64,17 +64,18 @@ const RoadMap = ({ roadmapRef }) => {
         </h2>
         <ol className="border-l-2 border-blue-400 ml-24">
           {projects.map((project, i) => (
+              // eslint-disable-next-line react/jsx-key
               <li
                   ref={moreRef}
-                  class={`mb-8 ml-4 relative ${i >= 4 ? "hidden" : ""}`}
+                  className={`mb-8 ml-4 relative ${i >= 4 ? "hidden" : ""}`}
               >
-                <div class="absolute w-7 h-7 bg-white rounded-full -left-14 -top-2 border flex justify-center items-center border-blue-400 text-xs font-bold">
+                <div className="absolute w-7 h-7 bg-white rounded-full -left-14 -top-2 border flex justify-center items-center border-blue-400 text-xs font-bold">
                   0{i + 1}
                 </div>
-                <div class="absolute w-2.5 h-2.5 bg-white rounded-full -left-[1.4rem] border border-blue-400"></div>
+                <div className="absolute w-2.5 h-2.5 bg-white rounded-full -left-[1.4rem] border border-blue-400"></div>
 
-                <h3 class="text-lg  font-semibold ">{project.title}</h3>
-                <p class="text-xs font-normal text-gray-500">
+                <h3 className="text-lg  font-semibold ">{project.title}</h3>
+                <p className="text-xs font-normal text-gray-500">
                   {project.description}
                 </p>
               </li>
