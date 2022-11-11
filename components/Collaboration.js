@@ -62,14 +62,9 @@ const Collaboration = () => {
             MADANGLES
           </h2>
           <p className="text-slate-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-            doloremque suscipit quia consectetur deserunt necessitatibus esse
-            sit animi expedita accusantium culpa assumenda, dolorum blanditiis
-            ad soluta cupiditate, earum magni fugit. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Doloribus doloremque suscipit quia
-            consectetur deserunt necessitatibus esse sit animi expedita
-            accusantium culpa assumenda, dolorum blanditiis ad soluta
-            cupiditate, earum magni fugit.
+            Collaboration is working with others to achieve a common goal. It is
+            a key skill in the workplace and can be helpful in many other areas
+            of life, such as raising a family or running a business.
           </p>
         </div>
       </div>
