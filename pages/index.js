@@ -29,12 +29,12 @@ export default function Home() {
         <Header projectRef={projectRef} roadmapRef={roadmapRef} />
         <Intro />
         <Project projectRef={projectRef} />
-        {/*<Dashboard />*/}
-        {/*<Collaboration />*/}
-        {/*<Technologies />*/}
+        <Dashboard />
+        <Collaboration />
+        <Technologies />
         <RoadMap roadmapRef={roadmapRef} />
-        {/*<ProjectAcceptance />*/}
-        <Testimonials/>
+        <ProjectAcceptance />
+        {/* <Testimonials /> */}
       </main>
     </div>
   );
