@@ -28,7 +28,7 @@ export default function Home() {
       <main className="">
         <Header projectRef={projectRef} roadmapRef={roadmapRef} />
         <Intro />
-        <Project projectRef={projectRef} />
+        {/*<Project projectRef={projectRef} />*/}
         {/*<Dashboard />*/}
         {/*<Collaboration />*/}
         {/*<Technologies />*/}
