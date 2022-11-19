@@ -35,7 +35,7 @@ const ProjectAcceptance = () => {
         />
       </div>
 
-      <div className="overflow-x-scroll scrollbar-hide ">
+      <div className="overflow-x-scroll scrollbar-hide md:hidden">
         <div className="overflow-visible min-w-min flex  flex-nowrap justify-start place-content-center items-center gap-[20px] p-0 flex-grow-0 flex-shrink-0 basis-auto relative">
           {cardInfo.map((info, i) => (
             <div

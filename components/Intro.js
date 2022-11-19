@@ -7,7 +7,7 @@ import { FiSend } from 'react-icons/fi';
 
 const Intro = () => {
   return (
-    <div className="mx-auto text flex my-[80px] w-[90%] mb-[150px] md:w-[89%] md:h-[90vh] relative">
+    <div className="mx-auto text flex my-[180px] md:my-[80px] w-[90%] mb-[150px] md:w-[89%] md:h-[90vh] h-[50vh] relative">
       <div className="hidden md:block rounded-full h-14 w-14 bg-gradient-to-bl from-[#cfe1fd] to-slate-100 absolute -top-20 -right-20"></div>
 
       <div className="flex flex-col justify-center md:mt-12 md:block items-center">

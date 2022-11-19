@@ -36,13 +36,13 @@ const Project = ({ projectRef }) => {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative md:px-16 ml-6">
       {showMoreProjects && (
         <MoreProjectsWindow onClose={() => setShowMoreProjects(false)} />
       )}
       <div
         ref={projectRef}
-        className="justify-between flex md:mb-32 w-[84%] md:h-[100vh]"
+        className="justify-between flex md:mb-32 w-[76%] md:w-[90%] md:h-[80vh]"
       >
         <div className="flex md:block flex-col items-center space-y-10">
           <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
@@ -76,7 +76,7 @@ const Project = ({ projectRef }) => {
                   </div>
 
                   <div
-                    className={`font-semibold mt-2 ${
+                    className={`font-semibold mt-2 text-center ${
                       card === cardInfo1[1] ? "text-md" : "text-xl"
                     }`}
                   >
@@ -185,7 +185,7 @@ const Project = ({ projectRef }) => {
                 </div>
 
                 <div
-                  className={`font-semibold mt-2 ${
+                  className={`font-semibold mt-2 text-center ${
                     card === cardInfo1[1] ? "text-lg" : "text-2xl"
                   }`}
                 >
