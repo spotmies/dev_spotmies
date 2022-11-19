@@ -10,7 +10,7 @@ const cardInfo1 = [
     link: "https://acchedya.spotmies.com",
   },
   {
-    name: "Asquare GoKarting",
+    name: "ASquare GoKarting",
     image: "/assets/gokart_logo.png",
     description: `Adventurous theme park for youngsters.`,
     link: "https://play.google.com/store/apps/details?id=com.asquaregokarting",
@@ -42,7 +42,7 @@ const Project = ({ projectRef }) => {
       )}
       <div
         ref={projectRef}
-        className="mx-auto justify-between flex md:mb-32 w-[84%] md:h-[100vh]"
+        className="justify-between flex md:mb-32 w-[84%] md:h-[100vh]"
       >
         <div className="flex md:block flex-col items-center space-y-10">
           <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
@@ -55,7 +55,7 @@ const Project = ({ projectRef }) => {
             <div className="flex space-x-10 z-10">
               {cardInfo1.map((card) => (
                 <div
-                  className={`max-w-sm py-5 px-5 w-48 h-56  rounded-2xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-t from-blue-50 to-white group ${
+                  className={`max-w-sm px-5 rounded-2xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-t from-blue-50 to-white group ${
                     card === cardInfo1[1] ? "-mt-10" : ""
                   }`}
                 >
@@ -89,7 +89,7 @@ const Project = ({ projectRef }) => {
                   <button
                     onClick={() => window.open(card.link, "_blank")}
                     // onClick={() => alert("Coming Soon")}
-                    className="mt-3 mb-2 group-hover:bg-blue-400 group-hover:text-white bg-white text-xs font-semibold text-blue-400  py-[5px] px-[22px] rounded-lg"
+                    className="mt-3 mb-4 group-hover:bg-blue-400 group-hover:text-white bg-white text-xs font-semibold text-blue-400  py-[5px] px-[22px] rounded-lg"
                   >
                     View More
                   </button>
@@ -100,7 +100,7 @@ const Project = ({ projectRef }) => {
             <div className="flex space-x-10 z-10">
               {cardInfo2.map((card) => (
                 <div
-                  className={`cursor-pointer max-w-sm py-5 px-5 w-48 h-56 rounded-xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-l from-blue-50 to-white group ${
+                  className={`cursor-pointer max-w-sm py-5 px-5 rounded-xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-l from-blue-50 to-white group ${
                     card === cardInfo2[1] ? "-mt-6" : ""
                   }`}
                 >
@@ -164,7 +164,7 @@ const Project = ({ projectRef }) => {
           <div className="flex space-x-10 z-10">
             {cardInfo1.map((card) => (
               <div
-                className={` transition-all hover:-translate-y-2 cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-2xl overflow-hidden shadow-lg flex flex-col  items-center bg-gradient-to-t from-blue-50 to-white group ${
+                className={` transition-all hover:-translate-y-2 cursor-pointer max-w-sm py-5 px-5 w-52   rounded-2xl overflow-hidden shadow-lg flex flex-col  items-center bg-gradient-to-t from-blue-50 to-white group ${
                   card === cardInfo1[1] ? "-mt-10" : ""
                 } `}
               >
@@ -208,7 +208,7 @@ const Project = ({ projectRef }) => {
           <div className="flex space-x-10 z-10">
             {cardInfo2.map((card) => (
               <div
-                className={` transition-all hover:-translate-y-2 cursor-pointer max-w-sm py-5 px-5 w-52 h-60  rounded-xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-l from-blue-50 to-white group ${
+                className={` transition-all hover:-translate-y-2 cursor-pointer max-w-sm py-5 px-5 w-52  rounded-xl overflow-hidden shadow-lg flex flex-col items-center bg-gradient-to-l from-blue-50 to-white group ${
                   card === cardInfo2[1] ? "-mt-6" : ""
                 }`}
               >

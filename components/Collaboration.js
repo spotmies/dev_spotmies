@@ -57,7 +57,7 @@ const Collaboration = () => {
             />
           </div> */}
         </div>
-        <div className="md:w-[45%] w-[120%] iPhone:ml-5 ml-8 md:ml-0">
+        <div className="md:w-[45%] w-[100%]">
           <h2 className="text-4xl md:text-5xl font-semibold mb-5 md:mb-10 text-center md:text-left">
             MADANGLES
           </h2>

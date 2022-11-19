@@ -73,7 +73,7 @@ const Dashboard = () => {
         </div>
 
         {/* mobile-view */}
-        <div className="md:hidden ml-20">
+        <div className="md:hidden">
           <h1 className=" text-3xl text-center font-bold">Our Clients</h1>
           <div className="flex space-x-12 ">
             <div className="w-[100px] h-[100px]">
@@ -103,7 +103,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="iPhone:ml-10 ml-14 mx-auto md:hidden flex justify-evenly bg-white overflow-hidden shadow-lg w-full h-[320px] rounded-[30px]">
+        <div className="mx-auto md:hidden flex justify-evenly bg-white overflow-hidden shadow-lg w-full h-[320px] rounded-[30px]">
           <div className="">
             <h1 className="text-3xl mt-10 font-bold">What we have</h1>
             <div className="flex items-center space-x-12">

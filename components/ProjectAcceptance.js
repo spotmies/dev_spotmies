@@ -19,7 +19,7 @@ const cardInfo = [
 const ProjectAcceptance = () => {
   return (
     <div className="mx-auto md:block flex flex-col md:space-y-0 space-y-16 mb-[150px] md:mb-0 my-[100px]  md:w-[86%] md:h-[100vh] relative">
-      <h2 className="text-4xl text-center md:text-left md:text-5xl flex flex-col font-bold space-y-2 iPhone:ml-6 ml-16 -mr-8 md:mr-0 md:ml-10 ">
+      <h2 className="text-4xl text-center md:text-left md:text-5xl flex flex-col font-bold space-y-2">
         <span className="z-10">How we</span>
         <span className="z-10">
           Accept the <b className="text-blue-400 font-bold z-10">project</b>
@@ -35,7 +35,7 @@ const ProjectAcceptance = () => {
         />
       </div>
 
-      <div className="ml-5 md:hidden overflow-x-scroll scrollbar-hide w-[450px]">
+      <div className="overflow-x-scroll scrollbar-hide ">
         <div className="overflow-visible min-w-min flex  flex-nowrap justify-start place-content-center items-center gap-[20px] p-0 flex-grow-0 flex-shrink-0 basis-auto relative">
           {cardInfo.map((info, i) => (
             <div
@@ -73,6 +73,7 @@ const ProjectAcceptance = () => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };

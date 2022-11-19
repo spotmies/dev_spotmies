@@ -35,7 +35,7 @@ export default function Home() {
         <Technologies />
         <RoadMap roadmapRef={roadmapRef} />
         <ProjectAcceptance />
-        {/* <Testimonials /> */}
+         <Testimonials />
       </main>
     </div>
   );

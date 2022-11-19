@@ -12,7 +12,7 @@ function LottieHeader() {
         },
     };
 
-    return <Lottie options={defaultOptions} height={400} width={400} />;
+    return <Lottie options={defaultOptions} height={550} width={550} />;
 }
 
 export default LottieHeader;
