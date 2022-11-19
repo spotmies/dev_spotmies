@@ -18,8 +18,8 @@ const Technologies = () => {
   };
 
   return (
-    <div className="mx-auto justify-between flex my-[100px] mb-[220px]  md:h-[100vh]">
-      <div className="md:flex flex-col space-y-24">
+    <div className="mx-auto justify-between flex my-[20px] mb-[220px] md:px-16 md:ml-6 md:h-[20vh]">
+      <div className="md:flex flex-col space-y-12">
         <h2 className="text-5xl text-center md:text-left flex flex-col font-bold space-y-2 relative">
           <div className="rounded-full h-24 w-24 bg-gradient-to-br from-[#cfe1fd] to-slate-100 absolute -top-10 -left-10 z-0"></div>
           <span className="z-10 text-blue-400">Technologies</span>

@@ -42,7 +42,7 @@ const Project = ({ projectRef }) => {
       )}
       <div
         ref={projectRef}
-        className="justify-between flex md:mb-32 w-[76%] md:w-[90%] md:h-[80vh]"
+        className="justify-between flex md:mb-32 mx-auto md:h-[80vh]"
       >
         <div className="flex md:block flex-col items-center space-y-10">
           <h2 className="text-5xl font-bold mt-[120px] relative flex gap-3 mb-6 md:mb-0 mr-12 md:mr-44">
@@ -140,7 +140,7 @@ const Project = ({ projectRef }) => {
 
           <button
             onClick={() => setShowMoreProjects(true)}
-            className="md:hidden mt-10 mb-5 hover:bg-blue-400 hover:text-white text-blue-400 border-[1.5px] border-blue-400 py-[6px] px-[32px] rounded-3xl mr-72"
+            className="md:hidden mt-10 mb-5 hover:bg-blue-400 hover:text-white text-blue-400 border-[1.5px] border-blue-400 py-[6px] px-[32px] rounded-3xl md:mr-72 mr-0"
           >
             View all
           </button>
